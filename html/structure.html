@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Layout Practical</title>
+    <style>
+      .shopping-cart {
+        border: 1px dashed #888;
+        padding: 10px;
+        margin-top: 10px;
+      }
+      .editor-note {
+        background: #eef;
+        padding: 2px 4px;
+        border-left: 4px solid #888;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 3. Common Page Sections -->
+    <header>
+      <!-- Site-wide branding and logo -->
+      <h1>My Website Logo</h1>
+    </header>
+
+    <nav>
+      <!-- Primary navigation links -->
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- 4. Semantic Structural Elements -->
+    <main>
+      <!-- Unique page content (one per page) -->
+      <article>
+        <!-- Self-contained piece (e.g., blog post) -->
+        <h2>Article Title</h2>
+        <section>
+          <!-- Thematic grouping within article -->
+          <h3>Introduction</h3>
+          <p>This is the introduction to the article.</p>
+        </section>
+        <section>
+          <h3>Details</h3>
+          <p>Here are the details of the topic.</p>
+        </section>
+        <hr />
+        <section>
+          <h3>Conclusion</h3>
+          <p>The closing thoughts go here.</p>
+        </section>
+      </article>
+
+      <!-- Sidebar (aside) for related links, ads, author bio -->
+      <aside>
+        <h3>About the Author</h3>
+        <p>Short bio of the author.</p>
+        <div class="shopping-cart">
+          <!-- 5. Non-Semantic Wrappers -->
+          <p>Your shopping cart is empty.</p>
+        </div>
+        <p class="editor-note">Editor's Note: New posts every week!</p>
+      </aside>
+    </main>
+
+    <!-- 6. Line & Thematic Breaks -->
+    <section style="padding: 20px">
+      <h2>Address Example</h2>
+      <p>
+        123 Main Street<br />
+        Springfield, USA<br />
+        ZIP 12345
+      </p>
+    </section>
+
+    <footer>
+      <!-- Copyright & contact links -->
+      <p>&copy; 2025 My Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

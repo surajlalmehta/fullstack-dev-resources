@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <!-- 3. The Role of <head>: Metadata lives here and is not rendered as page content -->
+
+    <!-- 5. Character Encoding with <meta>: Ensure support for all languages -->
+    <meta charset="utf-8" />
+
+    <!-- 4. Document Title vs. Page Heading: Title shown in tab/search, H1 visible on page -->
+    <title>My Test Page</title>
+
+    <!-- 6. SEO & Author Metadata: For search engines and snippet display -->
+    <meta name="author" content="Your Name" />
+    <meta
+      name="description"
+      content="Concise page summary for search engines."
+    />
+
+    <!-- 7. Open Graph & Social Metadata: Rich link previews on social platforms -->
+    <meta property="og:title" content="My Test Page" />
+    <meta
+      property="og:description"
+      content="A quick overview of my test page."
+    />
+    <meta property="og:image" content="../assets/full-stack.png" />
+
+    <!-- 8. Linking Favicons & Touch Icons: Browser tab icons & mobile home-screen icons -->
+    <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="public/apple-touch-icon.png"
+    />
+
+    <!-- 9. Attaching CSS & JavaScript: Stylesheet must be in head, script deferred -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- 4. Visible Page Heading -->
+    <h1>Welcome to My Test Page</h1>
+
+    <!-- 10. Specifying Document Language: Override for specific content -->
+    <p lang="ja">ご飯が熱い。</p>
+  </body>
+</html>

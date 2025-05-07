@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Emphasis Practical</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        line-height: 1.6;
+      }
+      section {
+        margin-bottom: 30px;
+      }
+      h2 {
+        margin-bottom: 10px;
+        font-size: 1.2em;
+      }
+      .example {
+        background: #f4f4f4;
+        padding: 10px;
+        border-left: 4px solid #888;
+      }
+      code {
+        background: #eef;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+      .highlight {
+        font-weight: bold;
+      }
+      .typo {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 1. Emphasis with <em> -->
+    <section>
+      <h2>1. Emphasis (&lt;em&gt;)</h2>
+      <div class="example">
+        <!-- Default styling: italic; semantics for stress/emphasis -->
+        <p>I am <em>really</em> excited to learn HTML.</p>
+      </div>
+      <p>
+        <em>Screen readers</em> may change tone when reading emphasized text.
+      </p>
+    </section>
+
+    <!-- 2. Strong Importance with <strong> -->
+    <section>
+      <h2>2. Strong Importance (&lt;strong&gt;)</h2>
+      <div class="example">
+        <!-- Default styling: bold; semantics for strong importance -->
+        <p><strong>Warning:</strong> Do not share your password.</p>
+      </div>
+      <p>Use when text carries semantic weight, not just for bold styling.</p>
+    </section>
+
+    <!-- 3. Nesting Emphasis & Strong -->
+    <section>
+      <h2>3. Nesting <code>&lt;strong&gt;</code> & <code>&lt;em&gt;</code></h2>
+      <div class="example">
+        <p>
+          This is <strong>very <em>important</em></strong
+          >—please remember!
+        </p>
+      </div>
+      <p>You can combine them to convey layered meaning.</p>
+    </section>
+
+    <!-- 4. Deprecated Presentational Tags -->
+    <section>
+      <h2>4. Deprecated Presentational Tags</h2>
+      <div class="example">
+        <!-- Avoid these: purely for visual effect -->
+        <p>
+          ❌ Avoid: <code>&lt;big&gt;Big text&lt;/big&gt;</code> or
+          <code>&lt;font&gt;color="red"&gt;Red&lt;/font&gt;</code>
+        </p>
+        <p>✅ Use CSS instead for presentation.</p>
+      </div>
+    </section>
+
+    <!-- 5. Repurposed Tags: <i>, <b>, <u> -->
+    <section>
+      <h2>5. Repurposed Tags (&lt;i&gt;, &lt;b&gt;, &lt;u&gt;)</h2>
+      <div class="example">
+        <!-- <i>: technical terms, foreign words, taxonomic names -->
+        <p>The <i>Panthera leo</i> is known as the lion.</p>
+
+        <!-- <i> with lang attribute for foreign phrases -->
+        <p>He shouted, <i lang="es">¡Hasta la vista!</i></p>
+
+        <!-- <u>: proper names or annotations (use sparingly) -->
+        <p>Learn to <u class="typo">recieve</u> the correct way.</p>
+      </div>
+      <p>
+        Underlines imply links—use <code>&lt;u&gt;</code> sparingly or consider
+        CSS.
+      </p>
+    </section>
+
+    <!-- 6. When to Use CSS Instead -->
+    <section>
+      <h2>6. When to Use CSS Instead</h2>
+      <div class="example">
+        <!-- Use a semantic wrapper and CSS for pure presentation -->
+        <p>
+          <span class="highlight">Important:</span> this is styled via CSS, not
+          HTML tags.
+        </p>
+      </div>
+      <p>
+        Wrap text in <code>&lt;span&gt;</code> or semantic tags and apply
+        classes for styling.
+      </p>
+    </section>
+  </body>
+</html>

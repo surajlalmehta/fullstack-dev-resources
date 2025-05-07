@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Lists Practical</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        line-height: 1.6;
+      }
+      section {
+        margin-bottom: 30px;
+      }
+      h2 {
+        margin-bottom: 10px;
+        font-size: 1.2em;
+      }
+      .example {
+        background: #f4f4f4;
+        padding: 10px;
+        border-left: 4px solid #888;
+      }
+      code {
+        background: #eef;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+      ul,
+      ol,
+      dl {
+        margin: 10px 0;
+        padding-left: 20px;
+      }
+      dt {
+        font-weight: bold;
+      }
+      dd {
+        margin-bottom: 10px;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 3. Unordered Lists (<ul>) -->
+    <section>
+      <h2>3. Unordered Lists (&lt;ul&gt;)</h2>
+      <div class="example">
+        <!-- Use when order doesn’t matter -->
+        <ul>
+          <li>Milk</li>
+          <li>Eggs</li>
+          <li>Bread</li>
+          <li>Hummus</li>
+        </ul>
+      </div>
+      <p>
+        Ideal for grocery lists or feature lists where sequence is unimportant.
+      </p>
+    </section>
+
+    <!-- 4. Ordered Lists (<ol>) -->
+    <section>
+      <h2>4. Ordered Lists (&lt;ol&gt;)</h2>
+      <div class="example">
+        <!-- Use when sequence matters -->
+        <ol>
+          <li>Drive to the end of the road</li>
+          <li>Turn right</li>
+          <li>Go straight through two roundabouts</li>
+          <li>Turn left at the third roundabout</li>
+          <li>School is on your right</li>
+        </ol>
+      </div>
+      <p>Great for step-by-step instructions or ranked lists.</p>
+    </section>
+
+    <!-- 5. Nesting Lists -->
+    <section>
+      <h2>5. Nesting Lists</h2>
+      <div class="example">
+        <ol>
+          <li>
+            Process all ingredients into a paste.
+            <ul>
+              <li>For chunky hummus, blend briefly.</li>
+              <li>For smooth hummus, blend longer.</li>
+            </ul>
+          </li>
+          <li>Season with salt, garlic, and lemon juice.</li>
+          <li>Drizzle olive oil on top and serve.</li>
+        </ol>
+      </div>
+      <p>
+        Combine <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> inside
+        <code>&lt;li&gt;</code> for sub-items.
+      </p>
+    </section>
+
+    <!-- 6. Description Lists (<dl>) -->
+    <section>
+      <h2>6. Description Lists (&lt;dl&gt;)</h2>
+      <div class="example">
+        <!-- Use for term–definition pairs -->
+        <dl>
+          <dt>Soliloquy</dt>
+          <dd>
+            A speech in which a character speaks thoughts aloud to the audience.
+          </dd>
+
+          <dt>Monologue</dt>
+          <dd>
+            A long speech spoken by a character to other characters or audience.
+          </dd>
+
+          <dt>Aside</dt>
+          <dd>
+            A remark intended only for the audience, unheard by other
+            characters.
+          </dd>
+        </dl>
+      </div>
+      <p>Perfect for glossaries, FAQs, or any term–definition content.</p>
+    </section>
+
+    <!-- 6.1 Multiple Descriptions -->
+    <section>
+      <h2>6.1 Multiple Descriptions</h2>
+      <div class="example">
+        <dl>
+          <dt>Aside</dt>
+          <dd>A theatrical comment for the audience.</dd>
+          <dd>In writing, a sidebar or related note beside main content.</dd>
+        </dl>
+      </div>
+      <p>
+        You can attach more than one <code>&lt;dd&gt;</code> to a single
+        <code>&lt;dt&gt;</code>.
+      </p>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Video & Audio Practical</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        line-height: 1.6;
+      }
+      section {
+        margin-bottom: 40px;
+      }
+      h2 {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+      }
+      .example {
+        background: #f9f9f9;
+        padding: 15px;
+        border-left: 4px solid #555;
+      }
+      code {
+        background: #eef;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+      video,
+      audio {
+        display: block;
+        max-width: 100%;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>4.1 Basic &lt;video&gt; Syntax</h2>
+      <div class="example">
+        <video
+          src="/public/assets/mobile-dev.mp4"
+          controls
+          width="400"
+          height="400"
+        >
+          <p>
+            Your browser doesn’t support HTML video. Here’s a
+            <a href="/public/assets/mobile-dev.mp4">link to the video</a>.
+          </p>
+        </video>
+      </div>
+    </section>
+
+    <section>
+      <h2>4.2 Multiple Sources</h2>
+      <div class="example">
+        <video controls width="400" height="400">
+          <source
+            src="/public/assets/mobile-dev.mp4"
+            type="video/mp4"
+            width="400"
+            height="400"
+          />
+          <source
+            src="/public/assets/careers.mp4"
+            type="video/mp4"
+            width="400"
+            height="400"
+          />
+          <p>
+            Download the video <a href="/public/assets/mobile-dev.mp4">here</a>.
+          </p>
+        </video>
+      </div>
+    </section>
+
+    <section>
+      <h2>4.3 Common Attributes</h2>
+      <div class="example">
+        <video
+          controls
+          width="640"
+          height="360"
+          autoplay
+          loop
+          muted
+          preload="metadata"
+          poster="/public/assets/full-stack.png"
+        >
+          <source src="/public/assets/mobile-dev.mp4" type="video/mp4" />
+          <p>Your browser doesn’t support HTML video.</p>
+        </video>
+        <p>
+          <em>Attributes:</em> <code>controls</code>, <code>width</code>,
+          <code>height</code>, <code>autoplay</code>, <code>loop</code>,
+          <code>muted</code>, <code>preload</code>, <code>poster</code>.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>5. The &lt;audio&gt; Element</h2>
+      <div class="example">
+        <audio controls>
+          <source src="/public/assets/audio.mp3" type="audio/mpeg" />
+          <!-- <source src="audio.ogg" type="audio/ogg" /> -->
+          <p>
+            Your browser doesn’t support HTML audio. Here’s a
+            <a href="audio.mp3">link to the audio</a>.
+          </p>
+        </audio>
+      </div>
+    </section>
+  </body>
+</html>

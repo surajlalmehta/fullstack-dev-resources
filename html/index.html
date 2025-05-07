@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Basic</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+      }
+      .intro {
+        background: #f9f9f9;
+        padding: 10px;
+        border-left: 4px solid #333;
+      }
+      img {
+        display: block;
+        margin: 10px 0;
+      }
+      hr {
+        margin: 20px 0;
+      }
+      .section {
+        margin-bottom: 30px;
+      }
+      .section h2 {
+        margin-bottom: 10px;
+        font-size: 1.2em;
+      }
+      code {
+        background: #eef;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--  Document Structure -->
+    <div class="section">
+      <h2>1. Document Structure</h2>
+      <p>This page demonstrates core HTML concepts</p>
+    </div>
+
+    <!-- What Is HTML? -->
+    <div class="section">
+      <h2>2. What Is HTML?</h2>
+      <p>HTML elements wrap content to give it meaning.</p>
+      <p><code>&lt;p&gt;My cat is very grumpy&lt;/p&gt;</code></p>
+      <p>Rendered:</p>
+      <p>My cat is very grumpy</p>
+    </div>
+
+    <!--  Anatomy of an Element -->
+    <div class="section">
+      <h2>3. Anatomy of an Element</h2>
+      <p class="intro">Welcome to HTML!</p>
+      <!-- Opening tag: &lt;p class="intro"&gt; -->
+      <!-- Content: Welcome to HTML! -->
+      <!-- Closing tag: &lt;/p&gt; -->
+    </div>
+
+    <!-- 5. Nesting Elements -->
+    <div class="section">
+      <h2>4. Nesting Elements</h2>
+      <p>Correct nesting: <strong>very</strong> inside a paragraph:</p>
+      <p>My cat is <strong>very</strong> grumpy.</p>
+
+      <!-- Incorrect overlapping (commented out) -->
+      <!-- <p>My cat is <strong>very grumpy.</p></strong> -->
+    </div>
+
+    <!-- 6. Void (Empty) Elements -->
+    <div class="section">
+      <h2>5. Void (Empty) Elements</h2>
+      <img
+        src="/public/assets/full-stack.png"
+        width="200"
+        height="200"
+        alt="Full Stack image"
+      />
+      <br />
+      <hr />
+    </div>
+
+    <!-- 7 & 8. Attributes & Quotes -->
+    <div class="section">
+      <h2>6. Attributes & Quotes</h2>
+      <p>
+        <img
+          src="/public/assets/full-stack.png"
+          alt="Full Stack image"
+          width="200"
+          height="200"
+        />
+      </p>
+      <p>
+        <code>&lt;input type="text" placeholder="Enter text" disabled&gt;</code>
+      </p>
+      <p>
+        <code
+          >&lt;a href="https://sudhasoftwaresolutions.com" title="Empowering
+          Businesses Through Technology"&gt;Visit
+          sudhasoftwaresolutions.com&lt;/a&gt;</code
+        >
+      </p>
+    </div>
+
+    <!-- 10. Whitespace in HTML -->
+    <div class="section">
+      <h2>7. Whitespace in HTML</h2>
+      <!-- Lots of spaces and line breaks follow:   
+
+        This     sentence     has     multiple     spaces.
+    -->
+      <p>This sentence has extra spaces, but renders as one.</p>
+    </div>
+
+    <!-- 11. Character References -->
+    <div class="section">
+      <h2>8. Character References</h2>
+      <p>Display these: &lt; &gt; &amp; &quot; &apos;</p>
+      <p><code>&lt;p&gt;My cat is very grumpy&lt;/p&gt;</code></p>
+    </div>
+
+    <!-- 12. Comments -->
+    <div class="section">
+      <h2>9. Comments</h2>
+      <!-- This comment is not rendered -->
+      <p>Comments above this line are hidden from view.</p>
+    </div>
+  </body>
+</html>

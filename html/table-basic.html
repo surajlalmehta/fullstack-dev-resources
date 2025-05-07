@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Tables Practical</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        line-height: 1.6;
+      }
+      section {
+        margin-bottom: 40px;
+      }
+      h2 {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+      }
+      p {
+        margin: 0.5em 0;
+      }
+      .example {
+        background: #f4f4f4;
+        padding: 15px;
+        border-left: 4px solid #555;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      th,
+      td {
+        border: 1px solid #888;
+        padding: 8px;
+        text-align: left;
+      }
+      colgroup col:nth-child(1) {
+        background: #eef;
+      }
+      colgroup col:nth-child(2) {
+        background: #ffe;
+      }
+      tfoot td {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>Table Basics: When Not to Use Tables</h2>
+      <p>
+        Never use tables for page layout. Tables harm accessibility,
+        maintainability, and responsiveness.
+      </p>
+      <p>
+        Use CSS layout techniques (Flexbox, Grid), and semantic
+        <code>&lt;div&gt;</code> or other elements instead.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Basic Table Structure</h2>
+      <div class="example">
+        <table>
+          <tr>
+            <td>Cell 1A</td>
+            <td>Cell 1B</td>
+          </tr>
+          <tr>
+            <td>Cell 2A</td>
+            <td>Cell 2B</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>5. Table Headers with &lt;th&gt;</h2>
+      <div class="example">
+        <table>
+          <tr>
+            <th>Person</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Alice</td>
+            <td>38</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>6. Spanning Cells</h2>
+      <div class="example">
+        <table>
+          <tr>
+            <th colspan="2">Animals</th>
+          </tr>
+          <tr>
+            <th rowspan="2">Horse</th>
+            <td>Mare</td>
+          </tr>
+          <tr>
+            <td>Stallion</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>7. Grouping Columns for Styling</h2>
+      <div class="example">
+        <table>
+          <colgroup>
+            <col />
+            <col />
+          </colgroup>
+          <tr>
+            <th>Feature</th>
+            <th>Support</th>
+          </tr>
+          <tr>
+            <td>Flexbox</td>
+            <td>Yes</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>8. Semantic Sectioning</h2>
+      <div class="example">
+        <table>
+          <thead>
+            <tr>
+              <th>Planet</th>
+              <th>Moons</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jupiter</td>
+              <td>79</td>
+            </tr>
+            <tr>
+              <td>Earth</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">Data from NASA</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>

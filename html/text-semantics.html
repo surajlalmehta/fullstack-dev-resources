@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Text Semantics Practical</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; line-height: 1.6; }
+    section { margin-bottom: 40px; }
+    h2 { margin-bottom: 10px; font-size: 1.3em; }
+    h3 { margin: 15px 0 5px; font-size: 1.1em; }
+    .example { background: #f4f4f4; padding: 15px; border-left: 4px solid #888; }
+    code { background: #eef; padding: 2px 4px; border-radius: 4px; }
+    pre { background: #272822; color: #f8f8f2; padding: 10px; overflow-x: auto; border-radius: 4px; }
+    abbr[title] { text-decoration: underline dotted; cursor: help; }
+    blockquote { border-left: 4px solid #888; margin: 10px 0; padding-left: 10px; color: #555; }
+    address { font-style: normal; background: #f9f9f9; padding: 10px; border: 1px solid #ddd; }
+    sup, sub { font-size: 0.8em; }
+    kbd { background: #eef; border: 1px solid #888; border-radius: 3px; padding: 2px 4px; }
+    samp { background: #eef; padding: 2px 4px; border-radius: 3px; }
+    time { background: #eef; padding: 2px 4px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <section>
+    <h2>3. Quotations</h2>
+    <h3>3.1 Block Quotations</h3>
+    <div class="example">
+      <blockquote cite="https://example.com/source">
+        <p>“The only way to do great work is to love what you do.”</p>
+      </blockquote>
+    </div>
+    <h3>3.2 Inline Quotations</h3>
+    <div class="example">
+      <p>As the spec says, <q cite="https://example.com/spec">this is an inline quote</q>.</p>
+    </div>
+    <h3>3.3 Citing Titles</h3>
+    <div class="example">
+      <p>See the <a href="https://example.com"><cite>Example Guide</cite></a> for details.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Abbreviations (<abbr>)</h2>
+    <div class="example">
+      <p>Hypertext Markup Language (<abbr title="Hypertext Markup Language">HTML</abbr>) defines web page structure.</p>
+      <p>I spoke with <abbr title="Doctor">Dr.</abbr> Smith.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>5. Contact Information (<address>)</h2>
+    <div class="example">
+      <address>
+        Jane Doe<br>
+        123 Main St.<br>
+        Anytown, USA<br>
+        <a href="mailto:jane@example.com">jane@example.com</a>
+      </address>
+    </div>
+  </section>
+
+  <section>
+    <h2>6. Superscript & Subscript</h2>
+    <div class="example">
+      <p>February 14<sup>th</sup></p>
+      <p>x<sup>2</sup> + y<sup>2</sup> = r<sup>2</sup></p>
+      <p>H<sub>2</sub>O is water.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>7. Computer Code Semantics</h2>
+    <div class="example">
+      <p>Call <code>alert()</code> to show a message.</p>
+      <pre><code>function greet() {
+  console.log('Hello!');
+}
+</code></pre>
+      <p>The variable <var>x</var> equals 10.</p>
+      <p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save.</p>
+      <p><samp>Success: Operation completed.</samp></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>8. Times & Dates (<time>)</h2>
+    <div class="example">
+      <p>Event date: <time datetime="2025-05-02">May 2, 2025</time></p>
+      <p><time datetime="2025-05">May 2025</time></p>
+      <p><time datetime="19:30">7:30 PM</time></p>
+      <p><time datetime="2025-05-02T19:30+05:30">7:30 PM IST, May 2, 2025</time></p>
+    </div>
+  </section>
+</body>
+</html>

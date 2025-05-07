@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Sections Practical</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      section {
+        margin-bottom: 30px;
+      }
+      h2 {
+        margin-bottom: 10px;
+      }
+      p {
+        margin: 0.5em 0;
+      }
+      .example {
+        background: #f4f4f4;
+        padding: 10px;
+        border-left: 4px solid #888;
+      }
+      code {
+        background: #eef;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 4. Paragraphs -->
+    <section>
+      <h2>4. Paragraphs (&lt;p&gt;)</h2>
+      <div class="example">
+        <!-- paragraphs are block-level and have default spacing -->
+        <p>This is a standalone paragraph of text.</p>
+        <p>
+          Browsers insert space above and below <code>&lt;p&gt;</code> by
+          default.
+        </p>
+      </div>
+    </section>
+
+    <!-- 5. Headings -->
+    <section>
+      <h2>5. Headings (&lt;h1&gt;–&lt;h6&gt;)</h2>
+      <div class="example">
+        <h1>The Crushing Bore</h1>
+        <p>By Chris Mills</p>
+
+        <h2>Chapter 1: The Dark Night</h2>
+        <p>It was a dark night…</p>
+
+        <h3>The Specter Speaks</h3>
+        <p>“Please have mercy on my soul!” exclaimed the specter.</p>
+      </div>
+      <p>
+        <em>Note:</em> Don’t skip levels (e.g., after <code>&lt;h2&gt;</code>,
+        use <code>&lt;h3&gt;</code>, not <code>&lt;h4&gt;</code>).
+      </p>
+    </section>
+
+    <!-- 6. Semantic vs. Presentational HTML -->
+    <section>
+      <h2>6. Semantic vs. Presentational HTML</h2>
+      <div class="example">
+        <!-- ❌ Not semantic: using span to fake heading style -->
+        <span style="font-size: 32px; display: block; margin: 10px 0"
+          >My Heading (Non-semantic)</span
+        >
+
+        <!-- ✅ Semantic: correct heading tag conveys meaning -->
+        <h1>My Heading (Semantic)</h1>
+      </div>
+      <p>
+        <em>Always choose semantic tags that convey structure and meaning.</em>
+      </p>
+    </section>
+  </body>
+</html>

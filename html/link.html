@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Hyperlinks Practical</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        line-height: 1.6;
+      }
+      section {
+        margin-bottom: 40px;
+      }
+      h2 {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+      }
+      .example {
+        background: #f4f4f4;
+        padding: 15px;
+        border-left: 4px solid #555;
+      }
+      code {
+        background: #eef;
+        padding: 2px 4px;
+        border-radius: 4px;
+      }
+      a:link {
+        color: #0066cc;
+      }
+      a:visited {
+        color: #551a8b;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      a:active {
+        color: #ff0000;
+      }
+      a:focus {
+        outline: 2px dashed #0066cc;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+      nav li {
+        display: inline;
+        margin-right: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>3. What Is a Hyperlink?</h2>
+      <div class="example">
+        <p>
+          Visit
+          <a href="https://careers.sudhasoftwaresolutions.com">Careers Portal</a
+          >.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>4. Inline & Block-Level Links</h2>
+      <div class="example">
+        <!-- Inline link -->
+        <p>
+          Read more on
+          <a href="https://developer.mozilla.org/">MDN Web Docs</a>.
+        </p>
+
+        <!-- Block-level link wrapping a heading -->
+        <a href="https://developer.mozilla.org/">
+          <h1>MDN Web Docs</h1>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>5. Image Links</h2>
+      <div class="example">
+        <a href="https://careers.sudhasoftwaresolutions.com">
+          <img
+            src="/public/assets/full-stack.png"
+            alt="Placeholder Logo"
+            width="200px "
+            height="200px"
+          />
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>6. Supporting Info: title Attribute</h2>
+      <div class="example">
+        <p>
+          <a
+            href="https://example.com"
+            title="Learn more about Example’s mission"
+          >
+            Example
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>7. URLs & Paths</h2>
+      <div class="example">
+        <p>
+          <strong>Absolute URL:</strong>
+          <code>https://www.example.com/projects/index.html</code>
+        </p>
+        <p>
+          <strong>Relative URL:</strong> <code>contacts.html</code> (same
+          folder)
+        </p>
+        <p><strong>Document Fragment:</strong></p>
+        <p><a href="#address">Jump to address section</a></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>8. Link States (CSS Pseudo-classes)</h2>
+      <div class="example">
+        <p>
+          <a href="#">Example Link</a> (hover, focus, active styles applied)
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>9. Crafting Good Link Text</h2>
+      <div class="example">
+        <p>
+          ❌ <a href="https://careers.sudhasoftwaresolutions.com">Click here</a>
+        </p>
+        <p>
+          ✅
+          <a href="https://careers.sudhasoftwaresolutions.com"
+            >Visit Careers Portal</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>10. Downloadable Resources</h2>
+      <div class="example">
+        <a
+          href="/public/assets/full-stack.png"
+          download="/public/assets/full-stack.png"
+        >
+          Download Annual Report (PDF)
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>11. Opening in New Tabs</h2>
+      <div class="example">
+        <a href="https://careers@sudhasoftwaresolutions.com" target="_blank">
+          Careers Portal (opens in new tab)
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>12. Building a Navigation Menu</h2>
+      <div class="example">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="pictures.html">Pictures</a></li>
+            <li><a href="social.html">Social</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section>
+      <h2>13. Email Links (mailto:)</h2>
+      <div class="example">
+        <p><a href="mailto:careers@sudhasoftwaresolutions.com">Email Us</a></p>
+        <p>
+          <a
+            href="mailto:careers@sudhasoftwaresolutions.com?subject=Hello%20World&body=Hi%20there!"
+          >
+            Contact Support
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Fragment target for document fragments -->
+    <section>
+      <h2 id="address">Address Section</h2>
+      <p>123 Main Street, Springfield, USA</p>
+    </section>
+  </body>
+</html>

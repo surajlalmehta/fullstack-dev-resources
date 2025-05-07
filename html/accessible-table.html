@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Accessible Table Practical</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      caption {
+        caption-side: top;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      th,
+      td {
+        border: 1px solid #888;
+        padding: 8px;
+        text-align: center;
+      }
+      thead {
+        background: #dde;
+      }
+      tfoot {
+        background: #eed;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Accessible Table Demo</h1>
+
+    <!-- 4. Table Caption (<caption>): concise summary before table -->
+    <table>
+      <caption>
+        Sales Report — Q1 2025
+      </caption>
+
+      <!-- 5. Semantic Sections: thead, tbody, tfoot -->
+      <thead>
+        <tr>
+          <!-- 6. Clarifying Relationships with scope -->
+          <th id="month" scope="col">Month</th>
+          <th id="north" scope="col">North Region (Rs)</th>
+          <th id="south" scope="col">South Region (Rs)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- Row header with scope "row" -->
+          <th id="jan" scope="row">January</th>
+          <!-- 7. Explicit Associations with id & headers -->
+          <td headers="jan north">1,000</td>
+          <td headers="jan south">850</td>
+        </tr>
+        <tr>
+          <th id="feb" scope="row">February</th>
+          <td headers="feb north">1,200</td>
+          <td headers="feb south">800</td>
+        </tr>
+        <tr>
+          <th id="mar" scope="row">March</th>
+          <td headers="mar north">1,100</td>
+          <td headers="mar south">900</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th id="total" scope="row">Total</th>
+          <td headers="total north">3,300</td>
+          <td headers="total south">2,550</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <p>
+      <strong>Why Accessibility Matters:</strong><br />
+      Visual users scan headers (e.g., “February”), while screen readers use
+      <code>scope</code> and <code>headers</code> to announce the correct row
+      and column labels for each cell.
+    </p>
+  </body>
+</html>

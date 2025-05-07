@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Forms & Buttons Practical</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        line-height: 1.6;
+      }
+      section {
+        margin-bottom: 40px;
+      }
+      h2 {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+      }
+      .example {
+        background: #f4f4f4;
+        padding: 15px;
+        border-left: 4px solid #555;
+      }
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+      fieldset {
+        margin-top: 20px;
+        padding: 10px;
+      }
+      legend {
+        font-weight: bold;
+      }
+      button {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Forms &amp; Buttons Practical</h1>
+
+    <!-- 3. Buttons -->
+    <section>
+      <h2>3. Buttons (&lt;button&gt;)</h2>
+      <div class="example">
+        <!-- Default submit inside form -->
+        <button>Click me</button>
+        <button type="reset">Reset form</button>
+        <button type="button">Neutral Button</button>
+      </div>
+      <p>
+        Default type is <code>submit</code>. Use <code>button</code> for JS
+        actions.
+      </p>
+    </section>
+
+    <!-- 4. Anatomy of a Form -->
+    <section>
+      <h2>4. Anatomy of a Form (&lt;form&gt;)</h2>
+      <div class="example">
+        <form action="/submit" method="get">
+          <!-- form controls go here -->
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </div>
+      <p>
+        <code>action</code>: target URL; <code>method</code>:
+        <code>get</code> or <code>post</code>.
+      </p>
+    </section>
+
+    <!-- 5. Text Inputs -->
+    <section>
+      <h2>5. Text Inputs (&lt;input&gt;)</h2>
+      <div class="example">
+        <!-- Explicit label -->
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="you@example.com"
+          required
+        />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120" />
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color" />
+      </div>
+    </section>
+
+    <!-- 6. Labels -->
+    <section>
+      <h2>6. Labels (&lt;label&gt;)</h2>
+      <div class="example">
+        <!-- Implicit label -->
+        <label
+          >Username:
+          <input type="text" name="username" />
+        </label>
+
+        <!-- Explicit label preferred -->
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" />
+      </div>
+    </section>
+
+    <!-- 7. Other Controls -->
+    <section>
+      <h2>7. Other Controls</h2>
+      <div class="example">
+        <!-- Radio buttons -->
+        <fieldset>
+          <legend>Gender</legend>
+          <label><input type="radio" name="gender" value="male" /> Male</label>
+          <label
+            ><input type="radio" name="gender" value="female" /> Female</label
+          >
+        </fieldset>
+
+        <!-- Checkboxes -->
+        <fieldset>
+          <legend>Interests</legend>
+          <label
+            ><input type="checkbox" name="interest" value="coding" />
+            Coding</label
+          >
+          <label
+            ><input type="checkbox" name="interest" value="music" />
+            Music</label
+          >
+        </fieldset>
+
+        <!-- Dropdown -->
+        <label for="transport">Transport:</label>
+        <select id="transport" name="transport">
+          <option value="">-- Choose --</option>
+          <option value="plane">Plane</option>
+          <option value="train">Train</option>
+          <option value="car">Car</option>
+        </select>
+
+        <!-- Textarea -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+      </div>
+    </section>
+
+    <!-- 8. Client-Side Validation Basics -->
+    <section>
+      <h2>8. Client-Side Validation Basics</h2>
+      <div class="example">
+        <label for="website">Website:</label>
+        <input
+          type="url"
+          id="website"
+          name="website"
+          placeholder="https://"
+          required
+        />
+
+        <label for="zip">ZIP Code:</label>
+        <input
+          type="text"
+          id="zip"
+          name="zip"
+          pattern="\d{5}"
+          title="Five digit ZIP code"
+        />
+      </div>
+      <p>
+        Browser will block submission and show messages if validation fails.
+      </p>
+    </section>
+
+    <!-- 9. Accessible, Semantic Forms -->
+    <section>
+      <h2>9. Accessible, Semantic Forms</h2>
+      <p>
+        Use semantic elements, ensure every control has a
+        <code>&lt;label&gt;</code>, and preserve default focus outlines for
+        keyboard users.
+      </p>
+    </section>
+  </body>
+</html>
