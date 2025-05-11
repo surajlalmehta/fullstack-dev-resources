@@ -55,12 +55,19 @@
       </p>
     </section>
 
-    <!-- 4. Anatomy of a Form -->
+    <!--  Anatomy of a Form -->
     <section>
-      <h2>4. Anatomy of a Form (&lt;form&gt;)</h2>
+      <h2>Anatomy of a Form (&lt;form&gt;)</h2>
       <div class="example">
         <form action="/submit" method="get">
           <!-- form controls go here -->
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Suraj"
+            required
+          />
           <button type="submit">Submit</button>
           <button type="reset">Reset</button>
         </form>
@@ -145,11 +152,12 @@
           <option value="plane">Plane</option>
           <option value="train">Train</option>
           <option value="car">Car</option>
+          <option value="car">Car</option>
         </select>
 
         <!-- Textarea -->
         <label for="comments">Comments:</label>
-        <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+        <textarea id="comments" name="comments" rows="10" cols="40"></textarea>
       </div>
     </section>
 

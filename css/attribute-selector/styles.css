@@ -1,0 +1,45 @@
+/* 🔎 1. Presence and Value Selectors */
+
+/* li elements that have a class attribute */
+li[class] {
+    font-size: 120%;
+    font-style: italic;
+}
+
+/* Exact match for class="a" */
+li[class="a"] {
+    background-color: yellow;
+}
+
+
+
+/* class contains the word "a" in space-separated list */
+li[class~="a"] {
+    color: red;
+}
+
+
+/* 🔎 2. Substring Matching Selectors */
+
+/* Class starts with "a" */
+li[class^="a"] {
+    font-weight: bold;
+}
+
+/* Class ends with "a" */
+li[class$="a"] {
+    background-color: lightblue;
+}
+
+/* Class contains "a" anywhere */
+li[class*="a"] {
+    border: 1px dashed black;
+    padding: 5px;
+}
+
+
+/* 🔗 Example: Attribute selector for <a> tags with href */
+a[href] {
+    color: blue;
+    text-decoration: underline;
+}

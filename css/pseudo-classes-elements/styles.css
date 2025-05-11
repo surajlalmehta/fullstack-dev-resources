@@ -1,0 +1,73 @@
+/* 🎯 Pseudo-classes */
+
+/* First child paragraph inside article */
+article p:first-child {
+    font-weight: bold;
+    font-size: 120%;
+    color: darkblue;
+}
+
+/* Last child */
+article p:last-child {
+    font-style: italic;
+}
+
+/* User interaction pseudo-classes for <a> */
+a:link,
+a:visited {
+    color: rebeccapurple;
+}
+
+a:hover {
+    color: hotpink;
+    text-decoration: none;
+}
+
+/* :focus on input */
+input:focus {
+    border: 2px solid green;
+    outline: none;
+}
+
+/* :invalid form field */
+input:invalid {
+    border: 2px dashed red;
+}
+
+
+/* 🔷 Pseudo-elements */
+
+/* First formatted line of first p */
+article p::first-line {
+    color: navy;
+}
+
+/* First letter styling */
+article p::first-letter {
+    font-size: 200%;
+    color: darkred;
+}
+
+/* 🔹 Generated content using ::before and ::after */
+.box::before {
+    content: "★ ";
+    color: gold;
+    font-size: 20px;
+}
+
+.box::after {
+    content: " ➥";
+    color: gray;
+    font-size: 18px;
+}
+
+/* Decorative block using ::before */
+.box::before {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: rebeccapurple;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
