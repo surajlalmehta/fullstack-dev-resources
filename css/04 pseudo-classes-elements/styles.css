@@ -1,21 +1,21 @@
 /* 🎯 Pseudo-classes */
 
 /* First child paragraph inside article */
-article p:first-child {
+/* article p:first-child {
     font-weight: bold;
     font-size: 120%;
     color: darkblue;
-}
+} */
 
 /* Last child */
-article p:last-child {
+/* article p:last-child {
     font-style: italic;
-}
+} */
 
 /* User interaction pseudo-classes for <a> */
 a:link,
 a:visited {
-    color: rebeccapurple;
+    color: rgb(51, 153, 85);
 }
 
 a:hover {
@@ -62,12 +62,13 @@ article p::first-letter {
 }
 
 /* Decorative block using ::before */
-.box::before {
+
+/* .box::before {
     display: block;
-    content: "";
+    content: "hey";
     width: 60px;
     height: 60px;
     background-color: rebeccapurple;
     border: 1px solid black;
     margin-bottom: 10px;
-}
+} */

@@ -1,0 +1,66 @@
+/* Global box-sizing rule */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Block example */
+.block-example {
+    display: block;
+    width: 300px;
+    padding: 20px;
+    margin: 10px auto;
+    background-color: #f0f8ff;
+    border: 2px solid #2196f3;
+}
+
+/* Inline example */
+.inline-example {
+    display: inline;
+    padding: 10px;
+    border: 1px solid red;
+    background-color: #fff0f0;
+}
+
+/* Inline-block example */
+.inline-block-example {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px dashed #4caf50;
+    background-color: #e8f5e9;
+}
+
+/* Box sizing demo */
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #f9fbe7;
+}
+
+/* Default box model: content + padding + border */
+.default-box {
+    box-sizing: content-box;
+}
+
+/* Alternative box model: total width includes padding + border */
+.border-box {
+    box-sizing: border-box;
+    background-color: #fff3e0;
+}

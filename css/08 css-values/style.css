@@ -1,0 +1,133 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    background-color: #f0f0f0;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Box examples */
+.box {
+    padding: 1em;
+    margin: 1em 0;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Absolute unit box */
+.absolute-box {
+    width: 300px;
+    height: 100px;
+    background-color: #3f51b5;
+}
+
+/* Relative unit box */
+.relative-box {
+    width: 50%;
+    height: 5em;
+    background-color: #009688;
+    font-size: 1.2em;
+}
+
+/* Percentage inside parent */
+.parent-box {
+    width: 100%;
+    background-color: #ffeb3b;
+}
+
+.child-box {
+    width: 50%;
+    background-color: #ff9800;
+    padding: 10px;
+}
+
+/* Color Examples */
+.color-section p {
+    padding: 0.5em;
+    margin: 0.5em 0;
+    color: white;
+}
+
+.color-section p:nth-child(1) {
+    background-color: blueviolet;
+}
+
+.hex {
+    background-color: #e91e63;
+}
+
+.rgb {
+    background-color: rgb(63 81 181);
+}
+
+.rgba {
+    background-color: rgba(0, 150, 136, 0.6);
+}
+
+.hsl {
+    background-color: hsl(200, 100%, 40%);
+}
+
+.hsla {
+    background-color: hsla(40, 100%, 50%, 0.6);
+}
+
+/* Background Image */
+.image-box {
+    background-image: linear-gradient(to right, red, yellow);
+    padding: 2rem;
+    margin: 2rem 0;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Calc example */
+.calc-box {
+    width: calc(100% - 100px);
+    background-color: #795548;
+    padding: 1rem;
+    color: white;
+    margin: 1rem auto;
+}
+
+
+/* min(): Chooses the smallest value */
+.min-box {
+    width: min(80%, 300px);
+    /* Will use whichever is smaller: 80% of parent OR 300px */
+    background-color: #4caf50;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* max(): Chooses the largest value */
+.max-box {
+    width: max(200px, 50%);
+    /* Will use whichever is larger: 200px OR 50% of parent */
+    background-color: #2196f3;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* clamp(): Confines value between a min and max */
+.clamp-box {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    /* Minimum: 1rem, Preferred: 2.5vw, Max: 2rem */
+    background-color: #9c27b0;
+    color: white;
+    padding: 1rem;
+    text-align: center; }

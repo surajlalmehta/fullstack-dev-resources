@@ -1,0 +1,44 @@
+/* Cascade Example: Last rule wins */
+h1 {
+    color: red;
+}
+
+h1 {
+    color: blue;
+}
+
+/* Specificity Example */
+.heading {
+    color: orange;
+}
+
+#main-heading {
+    color: purple;
+}
+
+/* Inheritance Example */
+.inheritance-test {
+    color: teal;
+    font-family: Arial, sans-serif;
+}
+
+.inheritance-test span {
+    color: black;
+    /* overrides inherited color */
+}
+
+/* !important Example */
+.important-test {
+    color: blue !important;
+}
+
+.important-test {
+    color: brown;
+}
+
+/* Universal Reset with 'all' */
+.reset-test {
+    all: unset;
+    color: darkred;
+    font-weight: bold;
+}

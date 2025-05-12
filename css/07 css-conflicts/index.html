@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Conflicts: Cascade, Specificity, Inheritance</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="heading" id="main-heading" style="color: green">
+      CSS Conflict Test
+    </h1>
+
+    <section class="inheritance-test">
+      <p>This paragraph inherits color from the section.</p>
+      <span>This span overrides inherited color.</span>
+    </section>
+
+    <p class="important-test">This text uses !important rule.</p>
+
+    <div class="reset-test">
+      <p>This text has all: unset applied.</p>
+    </div>
+  </body>
+</html>

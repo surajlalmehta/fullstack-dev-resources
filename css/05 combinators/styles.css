@@ -1,0 +1,27 @@
+/* Descendant Combinator */
+.box p {
+    color: red;
+}
+
+/* Child Combinator */
+ul>li {
+    border-top: 3px solid green;
+}
+
+/* Adjacent Sibling Combinator */
+h2+p {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+/* General Sibling Combinator */
+h3~p {
+    background-color: #eee;
+    padding: 5px;
+}
+
+/* Nesting Style Simulation */
+section p~img {
+    border: 2px solid red;
+}
