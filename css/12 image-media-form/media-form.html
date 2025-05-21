@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Media & Form Styling</title>
+    <link rel="stylesheet" href="media-form-style.css" />
+</head>
+
+<body>
+
+    <h1>🎨 CSS Media and Form Elements Demo</h1>
+
+    <section>
+        <h2>🖼️ Replaced Elements</h2>
+
+        <h3>1. Responsive Image</h3>
+        <img src="https://via.placeholder.com/800x400" alt="Sample Image" class="responsive-img" />
+
+        <h3>2. Image with object-fit: cover</h3>
+        <div class="img-box cover-fit">
+            <img src="https://via.placeholder.com/300x200" alt="Cover Fit" />
+        </div>
+
+        <h3>3. Image with object-fit: contain</h3>
+        <div class="img-box contain-fit">
+            <img src="https://via.placeholder.com/300x200" alt="Contain Fit" />
+        </div>
+
+        <h3>4. Embedded Video</h3>
+        <video controls class="responsive-video">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h2>📝 Form Styling</h2>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Write something..."></textarea>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" />
+
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" />
+
+            <input type="submit" value="Submit" />
+        </form>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+/* Typography */
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Table Layout */
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid purple;
+    background-color: #ff33cc;
+}
+
+/* Spacing & Borders */
+th,
+td {
+    padding: 20px;
+    border: 1px solid #999;
+}
+
+/* Caption Styling */
+caption {
+    font-family: "Rock Salt", cursive;
+    font-style: italic;
+    padding: 20px;
+    color: #666;
+    text-align: right;
+    letter-spacing: 1px;
+    caption-side: bottom;
+}
+
+/* Header & Footer Styling */
+thead,
+tfoot {
+    background: url("leopardskin.jpg");
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+thead th,
+tfoot th,
+tfoot td {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    border: 3px solid purple;
+    font-family: "Rock Salt", cursive;
+}
+
+/* Alignment */
+th {
+    letter-spacing: 2px;
+}
+
+td {
+    letter-spacing: 1px;
+}
+
+tbody td {
+    text-align: center;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+/* Zebra Striping */
+tbody tr:nth-child(odd) {
+    background-color: #ff33cc;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e495e4;
+}
+
+tbody tr {
+    background-image: url("noise.png");
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+
+    caption {
+        text-align: center;
+    }
+}

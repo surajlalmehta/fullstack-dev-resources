@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f7f7f7;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.example-section {
+    margin-bottom: 40px;
+}
+
+.box {
+    padding: 20px;
+    background: #f0f0f0;
+    border: 2px solid #999;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+/* 1. Static */
+.static {
+    position: static;
+}
+
+/* 2. Relative */
+.relative {
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background-color: #dff0d8;
+}
+
+/* 3. Absolute inside relative */
+.relative-container {
+    position: relative;
+    padding: 40px;
+    background-color: #d9edf7;
+}
+
+.tooltip {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background: #31708f;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* 4. Fixed */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* 5. Sticky */
+.scroll-box {
+    height: 300px;
+    overflow-y: scroll;
+    border: 2px dashed #aaa;
+    padding: 20px;
+    background: #fff;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background: #ffcc00;
+    padding: 10px;
+    font-weight: bold;
+    z-index: 10;
+    border-bottom: 2px solid #333;
+}
+
+.spacer {
+    height: 600px;
+    background: linear-gradient(to bottom, #fff, #eee);
+}

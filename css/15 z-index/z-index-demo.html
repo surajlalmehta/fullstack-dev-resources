@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Z-Index & Stacking Context Demo</title>
+    <link rel="stylesheet" href="z-index-style.css" />
+</head>
+
+<body>
+
+    <h1>🧠 Z-Index & Stacking Context Demo</h1>
+
+    <!-- Default Stacking Order -->
+    <section>
+        <h2>1. Default Stacking Order</h2>
+        <div class="box box1">Box 1 (under)</div>
+        <div class="box box2">Box 2 (above)</div>
+    </section>
+
+    <!-- Manual Z-Index -->
+    <section>
+        <h2>2. Z-Index Applied</h2>
+        <div class="box z-box1">Box 1 (z-index: 300)</div>
+        <div class="box z-box2">Box 2 (z-index: 100)</div>
+    </section>
+
+    <!-- Stacking Context via Opacity -->
+    <section>
+        <h2>3. Stacking Context (opacity)</h2>
+        <div class="card">
+            Parent Card (z-index: 1, opacity: 0.9)
+            <div class="nested-modal">Nested Modal (z-index: 999)</div>
+        </div>
+    </section>
+
+    <!-- Modal with Overlay -->
+    <section>
+        <h2>4. Modal & Overlay Example</h2>
+        <div class="overlay"></div>
+        <div class="modal">This is a Modal on top of Overlay</div>
+    </section>
+
+</body>
+
+</html>

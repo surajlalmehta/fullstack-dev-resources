@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+/* General Box Style */
+.box {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    padding: 10px;
+    background: lightblue;
+    margin: 20px;
+    border: 2px solid #333;
+}
+
+/* Default stacking (order in HTML) */
+.box1 {
+    background-color: #aed6f1;
+    margin-top: -60px;
+}
+
+.box2 {
+    background-color: #f5b7b1;
+    margin-left: 50px;
+    position: relative;
+}
+
+/* Custom z-index stacking */
+.z-box1 {
+    background-color: #7dcea0;
+    position: absolute;
+    left: 40px;
+    top: 0;
+    z-index: 300;
+}
+
+.z-box2 {
+    background-color: #f7dc6f;
+    position: absolute;
+    left: 80px;
+    top: 30px;
+    z-index: 100;
+}
+
+/* Stacking Context - opacity creates new context */
+.card {
+    position: relative;
+    z-index: 1;
+    opacity: 0.9;
+    background: #e8daef;
+    padding: 30px;
+    width: 300px;
+}
+
+.nested-modal {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    width: 200px;
+    height: 80px;
+    background: #8e44ad;
+    color: white;
+    padding: 10px;
+    z-index: 999;
+}
+
+/* Modal + Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.modal {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 300px;
+    padding: 20px;
+    background: white;
+    border: 3px solid #222;
+    z-index: 200;
+}

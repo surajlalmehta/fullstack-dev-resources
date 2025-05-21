@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS Positioning Demo</title>
+    <link rel="stylesheet" href="positioning-style.css" />
+</head>
+
+<body>
+
+    <h1>📌 CSS Positioning Examples</h1>
+
+    <!-- Static -->
+    <section class="example-section">
+        <h2>1. Static (Default)</h2>
+        <div class="box static">I am statically positioned</div>
+    </section>
+
+    <!-- Relative -->
+    <section class="example-section">
+        <h2>2. Relative</h2>
+        <div class="box relative">I am relatively positioned</div>
+    </section>
+
+    <!-- Absolute -->
+    <section class="example-section">
+        <h2>3. Absolute Inside Relative</h2>
+        <div class="container">
+            <div class="box relative-container">
+                I am relative container
+                <div class="tooltip">I'm absolutely positioned!</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixed -->
+    <section class="example-section">
+        <h2>4. Fixed</h2>
+        <div class="navbar">I’m fixed to the top!</div>
+        <p style="margin-top: 70px;">Scroll down to see the fixed navbar stay in place.</p>
+    </section>
+
+    <!-- Sticky -->
+    <section class="example-section scroll-box">
+        <h2>5. Sticky</h2>
+        <div class="sticky-header">I'm sticky!</div>
+        <p>This section has enough height to enable scrolling. Watch the sticky header as you scroll.</p>
+        <div class="spacer"></div>
+    </section>
+
+</body>
+
+</html>

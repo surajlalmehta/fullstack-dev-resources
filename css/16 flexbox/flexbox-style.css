@@ -1,0 +1,95 @@
+/* General Setup */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+    color: #333;
+}
+
+h1,
+h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* 1. Flex Container Basics */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.box {
+    background-color: #a9cce3;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #3498db;
+    flex: 1;
+}
+
+/* 2. Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #34495e;
+    padding: 15px 20px;
+    color: white;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* 3. Card Grid */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #f5b7b1;
+    padding: 30px;
+    flex: 1 1 calc(33.33% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    border: 2px solid #ec7063;
+}
+
+/* Responsive: flex-direction column on small screens */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 1 1 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+}

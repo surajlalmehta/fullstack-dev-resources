@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Overflow Demo</title>
+    <link rel="stylesheet" href="overflow-style.css">
+</head>
+
+<body>
+    <h1>CSS Overflow Property – Demo</h1>
+
+    <section class="example-section">
+        <h2>1. Visible (default)</h2>
+        <div class="box visible">
+            This is a visible overflow box. Content overflows and spills out visibly. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. This line will overflow!
+        </div>
+    </section>
+
+    <section class="example-section">
+        <h2>2. Hidden</h2>
+        <div class="box hidden">
+            This box hides anything that overflows its boundaries. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. This content is clipped.
+        </div>
+    </section>
+
+    <section class="example-section">
+        <h2>3. Scroll</h2>
+        <div class="box scroll">
+            This box always shows scrollbars. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scroll to see the
+            rest of this content. More and more lines. Keep scrolling!
+        </div>
+    </section>
+
+    <section class="example-section">
+        <h2>4. Auto</h2>
+        <div class="box auto">
+            Scrollbars will appear only when needed. This container grows vertically. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.
+        </div>
+    </section>
+
+    <section class="example-section">
+        <h2>5. Horizontal Overflow (word breaking)</h2>
+        <div class="box horizontal">
+            ThisIsAReallyLongWordWithoutAnySpacesThatWillCauseHorizontalOverflowIfNotHandledProperly.
+        </div>
+    </section>
+</body>
+
+</html>
